@@ -54,31 +54,35 @@
             Do not allow creation.
             </summary>
         </member>
-        <member name="M:NArrange.ConsoleApplication.CommandArguments.Parse(System.String[])">
+        <member name="T:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag">
             <summary>
-            Parses command arguments from an array of strings.
-            </summary>
-            <param name="args">String array arguments</param>
-            <returns>A CommandArguments instance</returns>'=
-            <exception cref="T:System.ArgumentException"/>
-        </member>
-        <member name="M:NArrange.ConsoleApplication.CommandArguments.OnParseError(System.String)">
-            <summary>
-            Called when a parsing error occurs.
-            </summary>
-            <param name="invalidFlag">Invalid flag text.</param>
-        </member>
-        <member name="M:NArrange.ConsoleApplication.CommandArguments.OnParseError">
-            <summary>
-            Called when a parsing error occurs.
+            Enumeration that defines the valid command argument flags
             </summary>
         </member>
-        <member name="M:NArrange.ConsoleApplication.CommandArguments.ParseFlag(System.String)">
+        <member name="F:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag.Unknown">
             <summary>
-            Parses a command argument flag from a text string.
+            Unknown command argument.
             </summary>
-            <param name="flagString">Command argument flag text.</param>
-            <returns>Command argument flag.</returns>
+        </member>
+        <member name="F:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag.Configuration">
+            <summary>
+            Configuration file.
+            </summary>
+        </member>
+        <member name="F:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag.Backup">
+            <summary>
+            Perform backup.
+            </summary>
+        </member>
+        <member name="F:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag.Restore">
+            <summary>
+            Perform restore.
+            </summary>
+        </member>
+        <member name="F:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag.Trace">
+            <summary>
+            Trace logging.
+            </summary>
         </member>
         <member name="P:NArrange.ConsoleApplication.CommandArguments.Backup">
             <summary>
@@ -110,35 +114,31 @@
             Gets a value indicating whether or not tracing should be performed.
             </summary>
         </member>
-        <member name="T:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag">
+        <member name="M:NArrange.ConsoleApplication.CommandArguments.Parse(System.String[])">
             <summary>
-            Enumeration that defines the valid command argument flags
+            Parses command arguments from an array of strings.
+            </summary>
+            <param name="args">String array arguments</param>
+            <returns>A CommandArguments instance</returns>'=
+            <exception cref="T:System.ArgumentException"/>
+        </member>
+        <member name="M:NArrange.ConsoleApplication.CommandArguments.OnParseError(System.String)">
+            <summary>
+            Called when a parsing error occurs.
+            </summary>
+            <param name="invalidFlag">Invalid flag text.</param>
+        </member>
+        <member name="M:NArrange.ConsoleApplication.CommandArguments.OnParseError">
+            <summary>
+            Called when a parsing error occurs.
             </summary>
         </member>
-        <member name="F:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag.Unknown">
+        <member name="M:NArrange.ConsoleApplication.CommandArguments.ParseFlag(System.String)">
             <summary>
-            Unknown command argument.
+            Parses a command argument flag from a text string.
             </summary>
-        </member>
-        <member name="F:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag.Configuration">
-            <summary>
-            Configuration file.
-            </summary>
-        </member>
-        <member name="F:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag.Backup">
-            <summary>
-            Perform backup.
-            </summary>
-        </member>
-        <member name="F:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag.Restore">
-            <summary>
-            Perform restore.
-            </summary>
-        </member>
-        <member name="F:NArrange.ConsoleApplication.CommandArguments.CommandArgumentFlag.Trace">
-            <summary>
-            Trace logging.
-            </summary>
+            <param name="flagString">Command argument flag text.</param>
+            <returns>Command argument flag.</returns>
         </member>
         <member name="T:NArrange.ConsoleApplication.Program">
             <summary>

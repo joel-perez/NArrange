@@ -89,34 +89,6 @@
             Performs setup for this test fixture.
             </summary>
         </member>
-        <member name="T:NArrange.Tests.CSharp.CSharpSymbolTests">
-            <summary>
-            Test fixture for the CSharpSymbol class.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.CSharp.CSharpSymbolTests.IsCSharpSymbolTest">
-            <summary>
-            Tests the IsCSharpSymbol method.
-            </summary>
-        </member>
-        <member name="T:NArrange.Tests.CSharp.CSharpWriteArrangedTests">
-            <summary>
-            Test fixture for parsing, arranging and writing C# test source code files.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.CSharp.CSharpWriteArrangedTests.Compile(System.String,System.String)">
-            <summary>
-            Compiles source code text to the specified assembly.
-            </summary>
-            <param name="text">Text to compile.</param>
-            <param name="assemblyName">Output assembly name.</param>
-            <returns>Compiler results.</returns>
-        </member>
-        <member name="P:NArrange.Tests.CSharp.CSharpWriteArrangedTests.ValidTestFiles">
-            <summary>
-            Gets a list of valid test files.
-            </summary>
-        </member>
         <member name="T:NArrange.Tests.Core.FileArrangerTests">
             <summary>
             Test fixture for the FileArranger class.
@@ -249,6 +221,49 @@
             <param name="fileName">Name of the file.</param>
             <param name="encoding">The encoding.</param>
             <returns>Test file contents as text.</returns>
+        </member>
+        <member name="T:NArrange.Tests.Core.SourceHandlerTests">
+            <summary>
+            Test fixture for the SourceHandler class.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.SourceHandlerTests.CreateTest">
+            <summary>
+            Tests creating a new extension handler.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.SourceHandlerTests.CreateWithNullConfigurationTest">
+            <summary>
+            Tests creating with a null configuration.
+            </summary>
+        </member>
+        <member name="T:NArrange.Tests.CSharp.CSharpSymbolTests">
+            <summary>
+            Test fixture for the CSharpSymbol class.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.CSharp.CSharpSymbolTests.IsCSharpSymbolTest">
+            <summary>
+            Tests the IsCSharpSymbol method.
+            </summary>
+        </member>
+        <member name="T:NArrange.Tests.CSharp.CSharpWriteArrangedTests">
+            <summary>
+            Test fixture for parsing, arranging and writing C# test source code files.
+            </summary>
+        </member>
+        <member name="P:NArrange.Tests.CSharp.CSharpWriteArrangedTests.ValidTestFiles">
+            <summary>
+            Gets a list of valid test files.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.CSharp.CSharpWriteArrangedTests.Compile(System.String,System.String)">
+            <summary>
+            Compiles source code text to the specified assembly.
+            </summary>
+            <param name="text">Text to compile.</param>
+            <param name="assemblyName">Output assembly name.</param>
+            <returns>Compiler results.</returns>
         </member>
         <member name="T:NArrange.Tests.CSharp.CSharpParserTests">
             <summary>
@@ -897,6 +912,16 @@
             </summary>
             <param name="resourceName">Name of the resource.</param>
         </member>
+        <member name="P:NArrange.Tests.CSharp.CSharpTestFile.Assembly">
+            <summary>
+            Gets the assembly associated with the test file.
+            </summary>
+        </member>
+        <member name="P:NArrange.Tests.CSharp.CSharpTestFile.Name">
+            <summary>
+            Gets the name of the test file.
+            </summary>
+        </member>
         <member name="M:NArrange.Tests.CSharp.CSharpTestFile.Compile(System.String,System.String)">
             <summary>
             Compiles C# source code.
@@ -931,16 +956,6 @@
             </summary>
             <param name="resourceName">Name of the resource.</param>
             <returns>The assembly for the resource.</returns>
-        </member>
-        <member name="P:NArrange.Tests.CSharp.CSharpTestFile.Assembly">
-            <summary>
-            Gets the assembly associated with the test file.
-            </summary>
-        </member>
-        <member name="P:NArrange.Tests.CSharp.CSharpTestFile.Name">
-            <summary>
-            Gets the name of the test file.
-            </summary>
         </member>
         <member name="T:NArrange.Tests.CSharp.CSharpTestUtilities">
             <summary>
@@ -1231,21 +1246,6 @@
         <member name="M:NArrange.Tests.CSharp.CSharpWriterTests.WriteUsingElementTest">
             <summary>
             Tests writing a using element.
-            </summary>
-        </member>
-        <member name="T:NArrange.Tests.Core.SourceHandlerTests">
-            <summary>
-            Test fixture for the SourceHandler class.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.SourceHandlerTests.CreateTest">
-            <summary>
-            Tests creating a new extension handler.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.SourceHandlerTests.CreateWithNullConfigurationTest">
-            <summary>
-            Tests creating with a null configuration.
             </summary>
         </member>
     </members>

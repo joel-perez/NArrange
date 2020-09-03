@@ -56,6 +56,21 @@
             </summary>
             <typeparam name="TCodeElement">Code element type.</typeparam>
         </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.AttributedElementTests`1.AddAttributeTest">
+            <summary>
+            Tests the AddAttribute method.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.AttributedElementTests`1.ClearAttributesTest">
+            <summary>
+            Tests the ClearAttributes method.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.AttributedElementTests`1.RemoveAttributeTest">
+            <summary>
+            Tests the AddAttribute method.
+            </summary>
+        </member>
         <member name="T:NArrange.Tests.Core.CodeElements.CodeElementTests`1">
             <summary>
             Test fixture base for the CodeElement class.
@@ -114,21 +129,6 @@
             </summary>
             <param name="original">Original element.</param>
             <param name="clone">Clone element.</param>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.AttributedElementTests`1.AddAttributeTest">
-            <summary>
-            Tests the AddAttribute method.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.AttributedElementTests`1.ClearAttributesTest">
-            <summary>
-            Tests the ClearAttributes method.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.AttributedElementTests`1.RemoveAttributeTest">
-            <summary>
-            Tests the AddAttribute method.
-            </summary>
         </member>
         <member name="T:NArrange.Tests.Core.CodeElements.CommentedElementTests`1">
             <summary>
@@ -532,6 +532,61 @@
             </summary>
             <param name="original">Original element.</param>
             <param name="clone">Clone element.</param>
+        </member>
+        <member name="T:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests">
+            <summary>
+            Test fixture for the ElementUtilities class.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.FormatNullElementTest">
+            <summary>
+            Tests Format with a null element.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.FormatNullStringTest">
+            <summary>
+            Tests Format with a null format string.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.FormatTest">
+            <summary>
+            Tests the Format method with a valid format string and element.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeAccessTest">
+            <summary>
+            Tests the GetAttribute method for Access.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeAttributesTest">
+            <summary>
+            Tests the GetAttribute method for Attributes.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeElementTypeTest">
+            <summary>
+            Tests the GetAttribute method for ElementType.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeModifierTest">
+            <summary>
+            Tests the GetAttribute method for Modifier.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeNameTest">
+            <summary>
+            Tests the GetAttribute method for Name.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeNoneTest">
+            <summary>
+            Tests the GetAttribute method for None.
+            </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeTypeTest">
+            <summary>
+            Tests the GetAttribute method for Type.
+            </summary>
         </member>
         <member name="T:NArrange.Tests.Core.ConditionExpressionEvaluatorTests">
             <summary>
@@ -1281,12 +1336,6 @@
             Interface for a source code test file.
             </summary>
         </member>
-        <member name="M:NArrange.Tests.Core.ISourceCodeTestFile.GetReader">
-            <summary>
-            Gets a TextReader for this test file.
-            </summary>
-            <returns>The TextReader.</returns>
-        </member>
         <member name="P:NArrange.Tests.Core.ISourceCodeTestFile.Assembly">
             <summary>
             Gets the assembly for the test file.
@@ -1296,6 +1345,12 @@
             <summary>
             Gets the name of the test file.
             </summary>
+        </member>
+        <member name="M:NArrange.Tests.Core.ISourceCodeTestFile.GetReader">
+            <summary>
+            Gets a TextReader for this test file.
+            </summary>
+            <returns>The TextReader.</returns>
         </member>
         <member name="T:NArrange.Tests.Core.MSBuildProjectParserTests">
             <summary>
@@ -1444,61 +1499,6 @@
             Tests inserting nested groups in a sorted manner.
             </summary>
         </member>
-        <member name="T:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests">
-            <summary>
-            Test fixture for the ElementUtilities class.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.FormatNullElementTest">
-            <summary>
-            Tests Format with a null element.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.FormatNullStringTest">
-            <summary>
-            Tests Format with a null format string.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.FormatTest">
-            <summary>
-            Tests the Format method with a valid format string and element.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeAccessTest">
-            <summary>
-            Tests the GetAttribute method for Access.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeAttributesTest">
-            <summary>
-            Tests the GetAttribute method for Attributes.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeElementTypeTest">
-            <summary>
-            Tests the GetAttribute method for ElementType.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeModifierTest">
-            <summary>
-            Tests the GetAttribute method for Modifier.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeNameTest">
-            <summary>
-            Tests the GetAttribute method for Name.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeNoneTest">
-            <summary>
-            Tests the GetAttribute method for None.
-            </summary>
-        </member>
-        <member name="M:NArrange.Tests.Core.CodeElements.ElementUtilitiesTests.GetAttributeTypeTest">
-            <summary>
-            Tests the GetAttribute method for Type.
-            </summary>
-        </member>
         <member name="T:NArrange.Tests.Core.ElementFilterTests">
             <summary>
             Test fixture for the ElementFilter class.
@@ -1565,6 +1565,11 @@
             </summary>
             <param name="canArrange">Fixed value for the CanArrange property.</param>
         </member>
+        <member name="P:NArrange.Tests.Core.ChainElementArrangerTests.TestElementArranger.ArrangeCalled">
+            <summary>
+            Gets a value indicating whether or not arrange was called.
+            </summary>
+        </member>
         <member name="M:NArrange.Tests.Core.ChainElementArrangerTests.TestElementArranger.ArrangeElement(NArrange.Core.CodeElements.ICodeElement,NArrange.Core.CodeElements.ICodeElement)">
             <summary>
             Arranges the specified element within the parent element.
@@ -1592,11 +1597,6 @@
             <returns>
             <c>true</c> if this instance can arrange the specified parent element; otherwise, <c>false</c>.
             </returns>
-        </member>
-        <member name="P:NArrange.Tests.Core.ChainElementArrangerTests.TestElementArranger.ArrangeCalled">
-            <summary>
-            Gets a value indicating whether or not arrange was called.
-            </summary>
         </member>
         <member name="T:NArrange.Tests.Core.ElementArrangerFactoryTests">
             <summary>
@@ -1738,6 +1738,17 @@
             Whether or not events should also be written to the console.
             </summary>
         </member>
+        <member name="P:NArrange.Tests.Core.TestLogger.Events">
+            <summary>
+            Gets the log event history.
+            </summary>
+        </member>
+        <member name="P:NArrange.Tests.Core.TestLogger.WriteToConsole">
+            <summary>
+            Gets or sets a value indicating whether or not messages should be written 
+            to the console.
+            </summary>
+        </member>
         <member name="M:NArrange.Tests.Core.TestLogger.Clear">
             <summary>
             Clears the test log.
@@ -1773,17 +1784,6 @@
             </summary>
             <returns>String representation.</returns>
         </member>
-        <member name="P:NArrange.Tests.Core.TestLogger.Events">
-            <summary>
-            Gets the log event history.
-            </summary>
-        </member>
-        <member name="P:NArrange.Tests.Core.TestLogger.WriteToConsole">
-            <summary>
-            Gets or sets a value indicating whether or not messages should be written 
-            to the console.
-            </summary>
-        </member>
         <member name="T:NArrange.Tests.Core.TestLogger.TestLogEvent">
             <summary>
             Test log event.
@@ -1817,6 +1817,11 @@
             Test utilities.
             </summary>
         </member>
+        <member name="P:NArrange.Tests.Core.TestUtilities.TestConfigurationFiles">
+            <summary>
+            Gets the test code configuration files.
+            </summary>
+        </member>
         <member name="M:NArrange.Tests.Core.TestUtilities.AssertNotEmpty(System.String)">
             <summary>
             Verifies that a file is not empty.
@@ -1829,11 +1834,6 @@
             </summary>
             <param name="results">Compiler results.</param>
             <returns>Compiler error if present, otherwise null.</returns>
-        </member>
-        <member name="P:NArrange.Tests.Core.TestUtilities.TestConfigurationFiles">
-            <summary>
-            Gets the test code configuration files.
-            </summary>
         </member>
         <member name="T:NArrange.Tests.Core.CodeWriterTests`1">
             <summary>
@@ -1868,6 +1868,11 @@
             <typeparam name="TCodeParser">Parser type.</typeparam>
             <typeparam name="TCodeWriter">Code writer type.</typeparam>
         </member>
+        <member name="P:NArrange.Tests.Core.WriteArrangedTests`2.ValidTestFiles">
+            <summary>
+            Gets an array of valid test files.
+            </summary>
+        </member>
         <member name="M:NArrange.Tests.Core.WriteArrangedTests`2.WriteArrangedElementTest">
             <summary>
             Tests writing a tree of arranged elements.
@@ -1880,11 +1885,6 @@
             <param name="text">Text to compile.</param>
             <param name="assemblyName">Output assembly name.</param>
             <returns>Compiler results.</returns>
-        </member>
-        <member name="P:NArrange.Tests.Core.WriteArrangedTests`2.ValidTestFiles">
-            <summary>
-            Gets an array of valid test files.
-            </summary>
         </member>
         <member name="T:NArrange.Tests.Core.ZipUtilitiesTest">
             <summary>

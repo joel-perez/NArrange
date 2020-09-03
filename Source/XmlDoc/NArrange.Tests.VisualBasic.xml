@@ -9,6 +9,11 @@
             Test fixture for parsing, arranging and writing VB test source code files.
             </summary>
         </member>
+        <member name="P:NArrange.Tests.VisualBasic.VBWriteArrangedTests.ValidTestFiles">
+            <summary>
+            Gets a list of valid test files.
+            </summary>
+        </member>
         <member name="M:NArrange.Tests.VisualBasic.VBWriteArrangedTests.Compile(System.String,System.String)">
             <summary>
             Compiles source code text to the specified assembly.
@@ -16,11 +21,6 @@
             <param name="text">Text to compile.</param>
             <param name="assemblyName">Output assembly name.</param>
             <returns>Compiler results.</returns>
-        </member>
-        <member name="P:NArrange.Tests.VisualBasic.VBWriteArrangedTests.ValidTestFiles">
-            <summary>
-            Gets a list of valid test files.
-            </summary>
         </member>
         <member name="T:NArrange.Tests.VisualBasic.VBWriterTests">
             <summary>
@@ -1029,6 +1029,16 @@
             </summary>
             <param name="resourceName">Name of the resource.</param>
         </member>
+        <member name="P:NArrange.Tests.VisualBasic.VBTestFile.Assembly">
+            <summary>
+            Gets the assembly associated with the test file
+            </summary>
+        </member>
+        <member name="P:NArrange.Tests.VisualBasic.VBTestFile.Name">
+            <summary>
+            Gets the name of the test file.
+            </summary>
+        </member>
         <member name="M:NArrange.Tests.VisualBasic.VBTestFile.Compile(System.String,System.String)">
             <summary>
             Compiles VB source code
@@ -1063,16 +1073,6 @@
             </summary>
             <param name="resourceName">Name of the resource.</param>
             <returns>Assembly for the resource.</returns>
-        </member>
-        <member name="P:NArrange.Tests.VisualBasic.VBTestFile.Assembly">
-            <summary>
-            Gets the assembly associated with the test file
-            </summary>
-        </member>
-        <member name="P:NArrange.Tests.VisualBasic.VBTestFile.Name">
-            <summary>
-            Gets the name of the test file.
-            </summary>
         </member>
     </members>
 </doc>
