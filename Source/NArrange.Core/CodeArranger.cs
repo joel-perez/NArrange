@@ -148,7 +148,7 @@ namespace NArrange.Core
 
                     if (firstNamespace == null)
                     {
-                        Action<ICodeElement> findFirstNamespace = delegate(ICodeElement processElement)
+                        Action<ICodeElement> findFirstNamespace = delegate (ICodeElement processElement)
                         {
                             if (firstNamespace == null)
                             {
@@ -164,7 +164,7 @@ namespace NArrange.Core
                     }
                 }
 
-                MoveUsings(elements, firstNamespace);
+                // MoveUsings(elements, firstNamespace); (31/10/2020 08:16:59 JP - Comento esta linea porque nunca la uso realmente)
 
                 foreach (ICodeElement element in elements)
                 {
